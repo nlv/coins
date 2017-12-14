@@ -1,5 +1,12 @@
 import qualified Data.Map as M (empty, insertWith)
 
+{-
+ - решение тестовой задачи:
+ - моделирование подпрасывание монет.
+ - реализация "вероятностной" монады
+ - нахождение вероятности
+ -}
+
 data Prob a = Prob { unProb :: [(a, Float)] } deriving Show
 
 instance Functor Prob  where
